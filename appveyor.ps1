@@ -111,5 +111,6 @@ CALLSTACK:$(Get-PSCallStack | Out-String)
 }
 
 InstallAppveyorTools
-mvn verify "--batch-mode" -D"surefire.useFile"=false
+# mvn verify "--batch-mode" -D"surefire.useFile"=false
+BuildSnapshot
 CheckLastExitCode
